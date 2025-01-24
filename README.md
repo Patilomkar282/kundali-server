@@ -4,14 +4,14 @@
 
 
 
-##🚀 Features
+🚀 Features
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 🔑 User Authentication: Secure user registration and login using JWT.
 🔄 Data Aggregation: Fetch data from platforms like LeetCode, GitHub, HackerRank, etc.
 📊 API Endpoints: Serve data to the frontend for visualization.
 🔧 Scalable Design: Built for handling large datasets efficiently.
 
-##🛠️ Tech Stack
+🛠️ Tech Stack
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 Node.js: JavaScript runtime for building scalable applications.
 Express.js: Backend framework for creating RESTful APIs.
