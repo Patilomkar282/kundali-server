@@ -38,7 +38,55 @@ const userSchema = new mongoose.Schema({
   createdAt: {
     type: Date,
     default: Date.now
-  }
+  },
+
+
+  //educaion section 
+  education: [{
+    instituteName: {
+      type: String,
+      required: [true, 'Please provide institute name']
+    },
+    marksObtained: {
+      type: Number,
+      required: [true, 'Please provide marks obtained'],
+      min: 0,
+      max: 100
+    },
+    yearOfCompletion: {
+      type: Number,
+      required: [true, 'Please provide year of completion']
+    }
+  }],
+
+
+  //profile section 
+  profiles: {
+    github: {
+      type: String,
+      trim: true
+    },
+    leetcode: {
+      type: String,
+      trim: true
+    },
+    hackerrank: {
+      type: String,
+      trim: true
+    },
+    hackerearth: {
+      type: String,
+      trim: true
+    },
+    codechef: {
+      type: String,
+      trim: true
+    },
+    portfolio: {
+      type: String,
+      trim: true
+    }
+  },
 });
 
 // Hash password before saving

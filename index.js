@@ -7,6 +7,7 @@ const connectDB = require('./config/db');
 const errorHandler = require('./utils/errorHandler');
 
 
+
 const app = express();
 
 // Connect to Database
@@ -29,6 +30,7 @@ app.get('/', (req, res) => {
 try {
   app.use('/api/auth', require('./routes/authRoutes'));
   app.use('/api/users', require('./routes/userRoutes'));
+  
 } catch (error) {
   console.log('Routes not fully implemented yet:', error.message);
 }
